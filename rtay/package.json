@@ -1,0 +1,19 @@
+{
+  "name": "rtay",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "lumo --classpath src --main rtay.core",
+    "repl": "lumo --init src/rtay/core.cljs --repl",
+    "build": "lumo --classpath src build.cljs",
+    "nexe": "nexe out/rtay.js -t windows-x64-10.9.0 --output out/rtay.exe",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "request": "^2.88.0"
+  }
+}
