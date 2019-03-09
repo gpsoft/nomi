@@ -1,0 +1,12 @@
+2019-03-09 11:14:59
+
+{:name "moment_lumo",
+ :version "1.0.0",
+ :description "",
+ :scripts
+ {:repl "lumo -i main.cljs -r",
+  :test "echo \"Error: no test specified\" && exit 1"},
+ :keywords [],
+ :author "", 
+ :license "ISC", 
+ :dependencies {:moment "^2.24.0"}}
