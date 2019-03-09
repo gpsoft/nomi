@@ -18,6 +18,8 @@ RUN deluser --remove-home node
 RUN npm install --global --unsafe-perm lumo-cljs
 RUN npm install --global nexe
 
+ENV TZ="Asia/Tokyo"
+
 # for convenience
 COPY ./.bashrc /root/
 
