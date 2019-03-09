@@ -1,0 +1,18 @@
+{
+  "name": "bmay",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "repl": "lumo --init src/bmay/core.cljs --repl",
+    "build": "lumo --classpath src build.cljs",
+    "build-simple": "lumo --classpath src build-simple.cljs",
+    "nexe": "nexe bmay.js -t windows-x64-10.9.0 --output out/bmay.exe",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "moment": "^2.24.0"
+  }
+}
