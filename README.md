@@ -134,8 +134,6 @@ And you need build scripts. One for non-optimized(builds faster):
 
 One for optimized(slow but can be packed with `nexe`):
 
-### optimized
-
 ```clojure
 (require '[lumo.build.api :as b])
 
@@ -151,22 +149,24 @@ Here is how to run the script.
 ```shell-session
 $ npm install
 $ npm run build
-$ npm run build-simple
 ```
 
 Like uberjar in Clojure, you can make all-in-one executable file with Nexe.
 
 ```shell-session
+$ npm run build-simple
 $ nexe bmay.js -t windows-x64-10.9.0 --output out/bmay.exe
 ```
 
-Caveat: `nexe v2.0.0-rc.34` [has a problem](https://github.com/nexe/nexe/issues/585); you may have to install next version:
+Caveat: `nexe v2.0.0-rc.34` [has a problem](https://github.com/nexe/nexe/issues/585); you may have to install next version manually:
 
 ```shell-session
 $ npm install --global nexe@next
 ```
 
+New nexe will go to `~/.npm-global/bin`.
+
 ## A real tool
 
-`rtay` directory has a (kind of) real cli tool which uses cheerio and request package.
+`rtay` directory has a (kind of) real cli tool to scrape a web page; it uses `cheerio` and `request` package.
 
