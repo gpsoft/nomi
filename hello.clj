@@ -1,0 +1,5 @@
+(require '[nrepl.server :refer [start-server]])
+(defonce server (start-server :bind "0.0.0.0" :port 3575))
+(require 'cljs.repl.node)
+(cljs.repl.node/repl-env)
+(+ 1 2)

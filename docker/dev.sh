@@ -11,8 +11,10 @@ groupadd --gid $HOST_GID $HOST_USER
 useradd --home-dir /home/$HOST_USER --gid $HOST_GID \
     --uid $HOST_UID --shell /bin/bash $HOST_USER
 cp /root/.bashrc /home/$HOST_USER/
-chown $HOST_USER:$HOST_USER \
+cp -r /root/.clojure /home/$HOST_USER/
+chown -R $HOST_USER:$HOST_USER \
     /home/$HOST_USER/.bashrc \
+    /home/$HOST_USER/.clojure \
     /home/$HOST_USER
 chmod 644 /home/$HOST_USER/.bashrc
 

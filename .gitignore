@@ -1,2 +1,6 @@
 **/node_modules/
 **/out/
+
+.cljs_node_repl/
+.rebel_readline_history
+

@@ -22,6 +22,7 @@ dev:
 		--env HOST_UID=`id -u` \
 		--volume $(shell pwd):/home/$(USER)/proj \
 		--volume ~/.npm-global:/home/$(USER)/.npm-global \
+		--volume ~/.m2:/home/$(USER)/.m2 \
 		--publish 8080:8080 \
 		--publish 3000:3000 \
 		--publish 3575:3575 \
