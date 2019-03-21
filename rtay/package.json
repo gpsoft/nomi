@@ -5,6 +5,7 @@
   "scripts": {
     "start": "lumo --classpath src --main rtay.core",
     "repl": "lumo --init src/rtay/core.cljs --repl",
+    "socket": "lumo --init src/rtay/core.cljs --socket-repl '{\"host\":\"0.0.0.0\",\"port\":3575}' --repl",
     "build": "lumo --classpath src build.cljs",
     "nexe": "nexe out/rtay.js -t windows-x64-10.9.0 --output out/rtay.exe",
     "test": "echo \"Error: no test specified\" && exit 1"
