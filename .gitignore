@@ -1,2 +1,10 @@
 **/node_modules/
 **/out/
+
+**/.cljs_node_repl/
+**/.cljs_nashorn_repl/
+**/nashorn_code_cache/
+**/.cpcache/
+**/.rebel_readline_history
+**/.nrepl-port
+
